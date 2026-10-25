@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-    read -rp "Enter n < ${MAX}: " n
+    read -rp "Enter n < 10: " n
 
     if [[ ! "$n" =~ ^0*[0-9]$ ]]; then
         echo "Invalid n!"
