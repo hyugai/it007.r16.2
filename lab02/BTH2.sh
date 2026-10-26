@@ -1,9 +1,9 @@
 #!/bin/bash
 
 while true; do
-    read -rp "Enter n < 10: " n
+    read -rp "Enter n >= 10: " n
 
-    if [[ ! "$n" =~ ^0*[0-9]$ ]]; then
+    if [[ ! "$n" =~ ^0*[1-9][0-9]+$ ]]; then
         echo "Invalid n!"
     else
         break

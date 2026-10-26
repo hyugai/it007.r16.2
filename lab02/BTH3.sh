@@ -12,8 +12,8 @@ done
 
 read -rp "Enter string: " pattern
 
-if grep "$pattern" "$target_file" >/dev/null; then
-    echo "Pattern found!"
+if grep -Fq -- "$pattern" "$target_file"; then
+    echo "Pattern FOUND!"
 else
-    echo "Pattern NOT found!"
+    echo "Pattern NOT found."
 fi
